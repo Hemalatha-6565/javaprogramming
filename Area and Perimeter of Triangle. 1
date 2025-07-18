@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner hema=new Scanner(System.in);
+        int b=hema.nextInt();
+        int h=hema.nextInt();
+        int s1=hema.nextInt();
+        int s2=hema.nextInt();
+        int s3=hema.nextInt();
+        System.out.printf("Area of Triangle is %.2f ",(float)(b*h)/2);
+        System.out.printf("\nPerimeter of Triangle is %.2f ",(float)(s1+s2+s3));
+        
+    }
+}
