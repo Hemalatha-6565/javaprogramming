@@ -1,0 +1,19 @@
+import java.util.*;
+import java.math.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan=new Scanner(System.in);
+        float n=scan.nextFloat();
+        int sqrt=scan.nextInt();
+        int bs=scan.nextInt();
+        int pow=scan.nextInt();
+        System.out.println((int)Math.floor(n));
+        System.out.println((int)Math.ceil(n));
+        System.out.println((int)Math.sqrt(sqrt));
+        System.out.println((int)Math.pow(bs,pow));
+        
+        
+    }
+}
