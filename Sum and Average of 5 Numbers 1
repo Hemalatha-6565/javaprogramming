@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        int c=scan.nextInt();
+        int d=scan.nextInt();
+        int e=scan.nextInt();
+        int g=a+b+c+d+e;
+        System.out.println("Sum of the 5 number is : " +(a+b+c+d+e));
+          System.out.printf("Average of the 5 number is : %.1f " ,(float)g/5);
+        
+    }
+}
