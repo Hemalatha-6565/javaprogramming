@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan=new Scanner(System.in);
+        int acbal=scan.nextInt();
+        int depw=scan.nextInt();
+        switch(depw){
+            case 1:
+                 int deposit=scan.nextInt();
+                acbal+=deposit;
+                System.out.println(acbal);
+            break;
+            case 2:
+                int withdraw=scan.nextInt();
+                if(withdraw>acbal){
+                System.out.println("Insufficient Balance");
+            }
+                else{
+                    acbal-=withdraw;
+                    System.out.println(acbal);
+                }
+            break;
+            default:System.out.println("Invalid Input");
+            break;
+            }
+        scan.close();
+    }
+}
