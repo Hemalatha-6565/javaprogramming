@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan=new Scanner(System.in);
+        double l= scan.nextDouble();
+        double d = scan.nextDouble();
+        if (l<=0||d<=0){
+            System.out.println("Invalid Input");
+            return;
+        }
+        double lPer100Km=(l/d)*100;
+        double m=d*0.6214;
+        double g=l*0.2642;
+        double mPerg=m/g;
+        System.out.println("Liters/100KM");
+        System.out.printf("%.2f\n",lPer100Km);
+        System.out.println("Miles/gallons");
+        System.out.printf("%.2f",mPerg);
+    }
+}
